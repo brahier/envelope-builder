@@ -12,10 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-class Class:
+"""This module manage the Clas class"""
 
-    def __init__(self, name, clas, table, number):
-        self.name = name
-        self.clas = clas
-        self.table = table
-        self.number = number
+import dataclasses
+
+# pylint: disable=too-few-public-methods
+@dataclasses.dataclass
+class Clas:
+    '''Class for keeping track of a class'''
+    clas: str
+    name: str
+    table: str
+    number: int = 0

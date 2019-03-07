@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+"""This package is a wrapper for service.app"""
+
+
 from . import service
 
+# pylint: disable=invalid-name
 app = service.app
