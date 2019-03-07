@@ -15,7 +15,7 @@ RUN set -ex \
         gdk-pixbuf-dev \
     \
     && python -m pip install --upgrade pip setuptools \
-    && python -m pip install WeasyPrint \
+    && python -m pip install WeasyPrint PyPDF2\
     && python -m pip install jinja2 flask gunicorn
 
 COPY fonts/* /usr/share/fonts/
